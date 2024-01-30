@@ -1,0 +1,161 @@
+.Side {
+  position: fixed;
+  width: 240px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(29, 35, 39);
+}
+
+.Loading {
+  text-align: center;
+  padding: 16px;
+}
+
+.Main {
+  height: 100vh;
+  margin-inline-start: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Notes-list {
+  padding-inline-start: 0;
+  list-style-type: none;
+  color: rgb(135, 132, 132);
+}
+
+.Note-link {
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.Note-link.active {
+  background-color: darkslategrey;
+}
+
+.Note-link-lastUpdatedAt {
+  font-size: 10px;
+  color: darkgrey;
+}
+
+.Button {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 35, 39);
+  border: none;
+  color: inherit;
+}
+
+.Button-create-note {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  background-color: rgb(44, 51, 56);
+}
+
+.Temperature {
+  padding: 8px;
+  font-size: 10px;
+  color: darkgrey;
+}
+
+.selected {
+  color: white;
+  font-weight: bold;
+}
+
+
+.gg-trash {
+  text-decoration: none;
+  color: currentColor;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 10px;
+  height: 12px;
+  border: 2px solid transparent;
+  box-shadow:
+      0 0 0 2px,
+      inset -2px 0 0,
+      inset 2px 0 0;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  margin-top: 4px
+}
+.gg-trash::after, .gg-trash::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+}
+
+.gg-trash::after {
+  background: currentColor;
+  border-radius: 3px;
+  width: 16px;
+  height: 2px;
+  top: -4px;
+  left: -5px
+}
+.gg-trash::before {
+  width: 10px;
+  height: 4px;
+  border: 2px solid;
+  border-bottom: transparent;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  top: -7px;
+  left: -2px
+}
+
+.gg-radio-check {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 100px
+}
+
+
+
+.gg-radio-checked,
+.gg-radio-checked::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 100px
+}
+.gg-radio-checked {
+    border: 2px solid;
+    position: relative;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+}
+.gg-radio-checked::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    top: 4px;
+    left: 4px
+}
