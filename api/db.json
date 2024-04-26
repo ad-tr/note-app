@@ -45,22 +45,39 @@
       "id": 11
     },
     {
-      "title": "Note de test",
-      "content": "Hellooo",
-      "inTrash": false,
-      "isChecked": false,
+      "inTrash": true,
       "id": 12
     },
     {
-      "title": "Note 2",
-      "content": "Blablabla\n\n",
-      "inTrash": false,
-      "isChecked": false,
+      "inTrash": true,
       "id": 13
     },
     {
       "inTrash": true,
       "id": 14
+    },
+    {
+      "inTrash": true,
+      "id": 15
+    },
+    {
+      "inTrash": true,
+      "id": 16
+    },
+    {
+      "inTrash": true,
+      "id": 17
+    },
+    {
+      "inTrash": true,
+      "id": 18
+    },
+    {
+      "title": "Nouvelle note",
+      "content": "",
+      "inTrash": false,
+      "isChecked": true,
+      "id": 19
     }
   ],
   "profile": {
